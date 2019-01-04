@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import custom.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="510.0" prefWidth="488.0" styleClass="bodyAnchorPane" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.shf6.MR5.view.GestorActualizacion">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="37.0" prefHeight="220.0" prefWidth="441.0" styleClass="dashBoardCard" AnchorPane.bottomAnchor="253.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="37.0">
+         <children>
+            <TextField fx:id="rutaArchivo" layoutX="23.0" layoutY="26.0" prefHeight="25.0" prefWidth="261.0" />
+            <Button layoutX="314.0" layoutY="26.0" mnemonicParsing="false" onAction="#cargarButtonHandler" text="Subir Archivo" />
+            <VBox layoutX="23.0" layoutY="65.0" prefHeight="88.0" prefWidth="100.0">
+               <children>
+                  <RadioButton fx:id="preciosRadio" mnemonicParsing="false" text="Precios" />
+                  <RadioButton fx:id="existenciaRadio" mnemonicParsing="false" text="Existencia" />
+                  <RadioButton fx:id="satRadio" mnemonicParsing="false" prefHeight="19.0" prefWidth="100.0" text="SAT" />
+                  <RadioButton fx:id="informacionRadio" mnemonicParsing="false" text="Información" />
+               </children>
+            </VBox>
+            <Button layoutX="314.0" layoutY="153.0" mnemonicParsing="false" onAction="#cambiarPropiedades" text="Cambiar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
